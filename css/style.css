@@ -1,0 +1,20 @@
+.debug header
+{
+  height: 100px;
+}
+
+.debug main
+{
+  height: 600px;
+  background-color: rgb(53, 49, 49);
+}
+
+.debug aside
+{
+  background-color: rgb(53, 49, 49);
+}
+
+.debug footer
+{
+  height: rgb(53, 49, 49);
+}
