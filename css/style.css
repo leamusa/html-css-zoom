@@ -1,20 +1,16 @@
-.debug header
-{
-  height: 100px;
-}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
 
-.debug main
-{
-  height: 600px;
-  background-color: rgb(53, 49, 49);
-}
-
-.debug aside
-{
-  background-color: rgb(53, 49, 49);
-}
-
-.debug footer
-{
-  height: rgb(53, 49, 49);
+  header {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
