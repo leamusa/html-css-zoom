@@ -1,16 +1,80 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
   }
-
+  
+  
   header {
     background-color: #f0f0f0;
     padding: 10px;
   }
+
   header ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  main {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: (calc(100vh - 45px - 80px);
+    padding: 20px;
+  }
+
+  .foto {
+    width: calc(12.5% - 10px); /*12.5% otterrai 8 immagini su una riga */
+    margin-bottom: 10px;
+  }
+
+  .foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+
+  footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav ul li {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .end {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
