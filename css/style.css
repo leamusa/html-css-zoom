@@ -1,16 +1,77 @@
-main{
-  width: 100%;
-  background-color: #000;
-  height: calc(100vh - 100px);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-footer{
-  background-color: #222222;
-  height: 100px;
-}
-.flex{
+
+header {
+  height: 50px;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+
 }
-/* Details */
+
+header ul {
+  display: flex;
+  list-style: none;
+  
+}
+
+header ul li {
+  margin-right: 5px;
+
+}
+
+.button {
+  background-color: #4a4a4a;
+  color: rgb(216, 207, 207);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6px 6px;
+
+}
+
+.mute {
+  color: red;
+  background-color: #4a4a4a;
+
+}
+main {
+  height: calc(100vh - 110px);
+  overflow: auto;
+  background-color: black;
+}
+
+.fa-table-cells {
+  padding-right: 5px;
+}
+
+.partecipats{
+  color: #928181;
+}
+.name{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(34, 34, 34, .7);
+  padding: 5px 5px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card {
+  width: calc(100% / 5);
+  padding: 2px 4px;
+  min-width: 20vh;
+  color: white;
+  position: relative;
+
+}
+
 .view.flex{
   justify-content: flex-end;
   gap: 20px;
@@ -27,49 +88,29 @@ footer{
   cursor: pointer;
   margin-top: 30px
 }
-.card{
-  min-width: calc(100% / 7 - 10px);
-  height: 130px;
-  position: relative;
-  /* background-color: red; */
-}
-.card img{
-  min-width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* background-color: red; */
-}
-.partecipants.flex{
-  padding-top: 40px;
-  gap: 10px;
-  flex-wrap: wrap
-}
-.name *{
+footer {
+  background-color: #222222;
   color: white;
+  height: 60px;
 }
-.name{
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(34, 34, 34, .7);
-  padding: 5px 5px;
-}
-/* footer */
-footer{
-  color: white;
-  display: flex;
-  justify-content: space-between;
 
-  height: 100px;
-}
-footer > div{
+footer nav {
   display: flex;
+  justify-content: space-between;https://picsum.photos/id/237/300/200
 }
-.icon{
+
+footer ul {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  
 }
+
+footer ul li {
+  padding: 15px;
+}
+
+.active {
+  color: green;
+}
+.icon1 {
+  color: red;
