@@ -10,84 +10,68 @@ header {
   justify-content: flex-end;
   align-items: center;
   background-color: black;
-
 }
 
 header ul {
   display: flex;
   list-style: none;
-  
 }
 
 header ul li {
   margin-right: 5px;
-
-}
-
-.button {
-  background-color: #4a4a4a;
-  color: rgb(216, 207, 207);
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 6px 6px;
-
 }
 
 .mute {
   color: red;
   background-color: #4a4a4a;
-
 }
+
 main {
   height: calc(100vh - 110px);
   overflow: auto;
   background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
 }
 
+.card {
+  flex-basis: calc(20% - 14px); /* Calcolato per 5 colonne con 7px di spazio tra di loro */
+  flex-grow: 1;
+  padding: 2px 4px;
+  min-width: 20vh;
+  color: rgb(148, 136, 136);
+  position: relative;
+
+}
 .fa-table-cells {
   padding-right: 5px;
 }
 
-.partecipats{
-  color: #928181;
-}
-.name{
+
+.name {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(34, 34, 34, .7);
+  background-color: rgba(34, 34, 34, 0.7);
   padding: 5px 5px;
 }
 
 .card img {
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card {
-  width: calc(100% / 5);
+  flex: 1 0 calc(20% - 7px); /* Calcolato per 5 colonne con 7px di spazio tra di loro */
   padding: 2px 4px;
   min-width: 20vh;
-  color: white;
-  position: relative;
-
+  color: rgb(148, 136, 136);
+  position:relative;
+  
 }
 
-.view.flex{
-  justify-content: flex-end;
-  gap: 20px;
-  margin-right: 10px;
-}
-.view.flex > .speaker,
-.view.flex > .maximize{
-  background-color: #494948;
-  padding: 5px 10px;
-  border-radius: 10px;
-  line-height: 20px;
-  vertical-align: center;
-  color: white;
-  cursor: pointer;
-  margin-top: 30px
-}
 footer {
   background-color: #222222;
   color: white;
@@ -96,13 +80,12 @@ footer {
 
 footer nav {
   display: flex;
-  justify-content: space-between;https://picsum.photos/id/237/300/200
+  justify-content: space-between;
 }
 
 footer ul {
   list-style-type: none;
   display: flex;
-  
 }
 
 footer ul li {
@@ -112,5 +95,8 @@ footer ul li {
 .active {
   color: green;
 }
+
 .icon1 {
   color: red;
+}
+
