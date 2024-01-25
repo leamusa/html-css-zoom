@@ -20,6 +20,14 @@ header ul {
 header ul li {
   margin-right: 5px;
 }
+.button {
+  background-color: #4a4a4a;
+  color: rgb(148, 144, 144);
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6px 6px;
+
+}
 
 .mute {
   color: red;
